@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="HTML Form">
+    <meta name="Keywords" content="lable tag, input tag, button tag, textarea, select and option">
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+
+    <style>
+        td {
+            text-align: left;
+        }
+    </style>
+
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-xl-top menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" id="site_name"><img src="img2.png" class="logo"></a>
+            <button class="navbar-toggler tgl_btn navbar-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="o_level.html">O-Level</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="a_level.html">A-Level</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ccc.html">CCC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="row">
+        <div class="col-sm-2 col-md-3 col-lg-2">
+            <p>
+                <button class="mt-5 btn side_btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <b>|&nbsp;|&nbsp;|</b>
+                </button>
+            </p>
+            <aside class="navbar w3-container">
+                <div class="collapse show" id="collapseExample">
+                    <div class="card-body">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link w3-hover-black" href="ITTNB.html">ITTNB</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link w3-hover-black" href="WDP.html">WDP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link w3-hover-black" href="python.html">Python</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link w3-hover-black" href="#">IOT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link w3-hover-black" href="old_papers.html">Old Papers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+
+        <div class="col-sm-7 col-md-8 col-lg-7 shadow-lg p-5 mb-5 rounded content">
+            <div class="container">
+                <h1><b>HTML Form</b></h1>
+                <p>
+                    HTML form or web form or online form is use to collect users input data. For example Login Form,
+                    Registration Form etc. <br>Users enter or fill their information using form element such as text
+                    boxes,
+                    radio buttons, check boxes, drop down menus etc. <br>The &#60;form&#62; tag defines a form in HTML.
+                </p>
+                <h4><b><u>Syntax :</u></b></h4>
+                <img src="html_img/form/f_syntax.JPG" alt="Image" class="w3-image content_image2"
+                    style="margin-bottom: 30px;">
+                <p>The form element can contain one or more of the following form elements or controls.</p>
+                <h4><b>Form Elements</b></h4>
+                <ul type="square">
+                    <li>&#60;label&#62;</li>
+                    <li>&#60;input&#62;</li>
+                    <li>&#60;button&#62;</li>
+                    <li>&#60;textarea&#62;</li>
+                    <li>&#60;select&#62; and &#60;option&#62;</li>
+                    <li>&#60;fieldset&#62; and &#60;legend&#62;</li>
+                    <li>&#60;optgroup&#62;</li>
+                </ul>
+                <hr>
+
+                <h3><b>&#60;label&#62; tag</b></h3>
+                <p>The &#60;label&#62; tag is used to specify a label for an &#60;input&#62; element of a form. It adds
+                    a label to a form control such as text, email, password, textarea etc. It toggles the control when a
+                    user clicks on a text within the &#60;label&#62; element.</p>
+                <h4><b><u>Example :</u></b></h4>
+                <img src="html_img/form/lable.JPG" alt="Image" class="w3-image content_image2"
+                    style="margin-bottom: 30px;">
+                <h4><b><u>Output :</u></b></h4>
+                <img src="html_img/form/lable_img.jpg" alt="Image" class="w3-image content_image2"
+                    style="margin-bottom: 30px;"><br>
+                <hr>
+
+                <h3><b>&#60;input&#62; tag</b></h3>
+                <p>The &#60;input&#62; tag or element is use to create many different fields on the basis of
+                    <u><i>type</i></u> attribute.</p>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered border-dark table-striped table-light table-hover">
+                        <tr style="text-align: center;">
+                            <th style="width: 210px;">&#60;input&#62; Element Types</th>
+                            <th>Description</th>
+                            <th>Output</th>
+                        </tr>
+                        <tr>
+                            <td>&#60;input type= "text"&#62;</td>
+                            <td>Defines a text box</td>
+                            <td><input type="text" placeholder="Enetr Your Name" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>&#60;input type= "password"&#62;</td>
+                            <td>Defines a textbox as password field. It masks the characters</td>
+                            <td><input type="password" placeholder="Password" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>&#60;input type= "radio"&#62;</td>
+                            <td>Defines a radio button</td>
+                            <td><input type="radio" readonly> Male</td>
+                        </tr>
+                        <tr>
+                            <td>&#60;input type= "checkbox"&#62;</td>
+                            <td>Defines a checkbox</td>
+                            <td><input type="checkbox" readonly> Terms & conditions</td>
+                        </tr>
+                        <tr>
+                            <td>&#60;input type= "number"&#62;</td>
+                            <td>Defines a number field</td>
+                            <td><input type="number" placeholder="0123456789" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>&#60;input type= "file"&#62;</td>
+                            <td>Defines a file upload or browse button</td>
+                            <td><input type="file" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>&#60;input type= "email"&#62;</td>
+                            <td>Defines a E-mail field</td>
+                            <td><input type="email" placeholder="xyz@gmail.com" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>&#60;input type= "date"&#62;</td>
+                            <td>Defines a date picker</td>
+                            <td><input type="date" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>&#60;input type= "color"&#62;</td>
+                            <td>Defines a color picker</td>
+                            <td><input type="color" readonly> Choose any color</td>
+                        </tr>
+                        <tr>
+                            <td>&#60;input type= "button"&#62;</td>
+                            <td>Defines a normal/event button</td>
+                            <td><input type="button" value="Click here" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>&#60;input type= "reset"&#62;</td>
+                            <td>Defines a reset button (clear all form fields at once)</td>
+                            <td><input type="reset" value="Reset" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>&#60;input type= "submit"&#62;</td>
+                            <td>Defines a submit button</td>
+                            <td><input type="submit" value="Submit" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>&#60;input type= "image"&#62;</td>
+                            <td>Defines a image button as submit button</td>
+                            <td><input type="image" src="img2.png" height="50px" readonly></td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+
+                <h3><b>Attributes of &#60;input&#62; tag</b></h3>
+                <ul type="circle">
+                    <li><b>Value :</b> It specifies the initial value oif element.</li>
+                    <li><b>Name :</b> It specifies name of the element.</li>
+                    <li><b>Placeholder :</b> It specifies the hint for input that is given by the user.</li>
+                    <li><b>Readonly :</b> It specifies the input field is read only. It means we cannot enter any data
+                        or value.</li>
+                    <li><b>Disabled :</b> It specifies that the input field is disabled or inactive. It also does not
+                        allow to enter any data or value.</li>
+                    <li><b>Autocomplete :</b> It can have value "ON" or "OFF" when user starts typing in the input
+                        field, it predicts the texts data typed earlier.</li>
+                    <li><b>Max :</b> It specifies the maximum value in the input field.</li>
+                    <li><b>Min :</b> It specifies the minimum value in the input field.</li>
+                    <li><b>Maxlength :</b> It specifies the maximum length (No. of characters) of input field.</li>
+                    <li><b>Size :</b> It controls the width of the input field.</li>
+                    <li><b>Checked :</b> This attribute checks the option automatically when form loads (it is used with
+                        radio buttons and checkboxes).</li>
+                    <li><b>Required :</b> It specifies the input field must be filled before the submitting the form.
+                    </li>
+                    <li><b>Selected :</b> It specifies pre selected option when page loads (used while creating drop
+                        down menu).</li>
+                </ul>
+                <hr>
+
+                <h3><b>&#60;button&#62; tag</b></h3>
+                <p>This tag or element is used to create clickable button. <br>We can use type attribute for creating
+                    different types of button.</p>
+                <h4><b><u>Example :</u></b></h4>
+                <img src="html_img/form/btn.JPG" alt="Image" class="w3-image content_image2"
+                    style="margin-bottom: 30px;">
+                <h4><b><u>Output :</u></b></h4>
+                <img src="html_img/form/btn_img.JPG" alt="Image" class="w3-image content_image2"
+                    style="margin-bottom: 30px;"><br>
+                <hr>
+
+                <h3><b>&#60;textarea&#62;</b></h3>
+                <p>With the help of textarea users can enter large amount of text. For e.g. user's feedback, comments.
+                </p>
+                <h4><b>Attributes of &#60;textarea&#62;</b></h4>
+                <ul>
+                    <li><b>Rows :</b> This attribute is used to specify number of rows or lines in text area.</li>
+                    <li><b>Cols :</b> It defines the number of characters in the columns or width in the text area.</li>
+                </ul>
+                <b>Note :</b> &#60;input&#62; tag attributes can also be used.
+                <h4><b><u>Example :</u></b></h4>
+                <img src="html_img/form/feed.JPG" alt="Image" class="w3-image content_image2"
+                    style="margin-bottom: 30px;">
+                <h4><b><u>Output :</u></b></h4>
+                <img src="html_img/form/feed_img.JPG" alt="Image" class="w3-image content_image2"
+                    style="margin-bottom: 30px;"><br>
+                <hr>
+
+                <h3><b>&#60;select&#62; and &#60;option&#62;</b></h3>
+                <p>The drop down menu or list box is created by using select and option tags. Here users have to select
+                    option from the list of pre defined options. The select tag is used to specify the drop down box and
+                    option tag is used to specify options inside dropdown menu.</p>
+                <h4><b><u>Example :</u></b></h4>
+                <img src="html_img/form/select.JPG" alt="Image" class="w3-image content_image2"
+                    style="margin-bottom: 30px;">
+                <h4><b><u>Output :</u></b></h4>
+                <img src="html_img/form/select_img.JPG" alt="Image" class="w3-image content_image2"
+                    style="margin-bottom: 30px;">
+                <h3><b>List Box</b></h3>
+                <p>List box can be creates using “size” attribute with &#60;select&#62; tag. When we use “multiple”
+                    attribute, users can select more than one option (with ctrl key and holding mouse left button)</p>
+                <hr>
+
+                <h3><b>&#60;fieldset&#62; and &#60;legend&#62;</b></h3>
+                <p>The &#60;fieldset&#62; is used to group related data of form (form fields). It creates the box around
+                    the related form fields.</p>
+                <p>The &#60;legend&#62; element is used to give caption to the fieldset. It is used within
+                    &#60;fieldset&#62; element.</p>
+                <h4><b><u>Example :</u></b></h4>
+                <img src="html_img/form/fieldset.JPG" alt="Image" class="w3-image content_image2"
+                    style="margin-bottom: 30px;">
+                <h4><b><u>Output :</u></b></h4>
+                <img src="html_img/form/fieldset_img.JPG" alt="Image" class="w3-image content_image2"
+                    style="margin-bottom: 30px;"><br>
+                <hr>
+
+                <h3><b>Pattern Attribute</b></h3>
+                <p>This attribute specifies a regular expression that the input fields value check against on form
+                    submission. <br>We can use title attribute to describe the pattern that help to user.</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered border-dark table-striped table-info table-hover">
+                        <tr style="text-align: center;">
+                            <th style="width: 150px;">Attribute Values</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>[a-zA-Z]</td>
+                            <td>Allow alphabets (upper & lower case). Any number of characters.</td>
+                        </tr>
+                        <tr>
+                            <td>[a-zA-Z]{3}</td>
+                            <td>Allow alphabets upper &lower case with exactly 3 characters.</td>
+                        </tr>
+                        <tr>
+                            <td>[a-zA-Z]{3,}</td>
+                            <td>Allow upper & lower case alphabets with minimum 3 characters and maximum no limit.</td>
+                        </tr>
+                        <tr>
+                            <td>[a-zA-Z0-9]{3,8}</td>
+                            <td>Allow upper & lower case alphabets and numeric digits with minimum3 and maximum 8
+                                characters.</td>
+                        </tr>
+                        <tr>
+                            <td>[0-9]{10}</td>
+                            <td>Allow numeric digits only with exactly 10 digits.</td>
+                        </tr>
+                        <tr>
+                            <td>.{5,15}</td>
+                            <td>Allow typer of characters with the range of minimum 5 and maximum 15 characters.</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+
+                <h3><b>Autofocus Attribute</b></h3>
+                <p>The autofocus attribute specifies that the element should automatically get focus when the page
+                    loads.</p>
+                <h4><b><u>Example :</u></b></h4>
+                <img src="html_img/form/focus.JPG" alt="Image" class="w3-image content_image2"
+                    style="margin-bottom: 30px;">
+                <h4><b><u>Output :</u></b></h4>
+                <img src="html_img/form/focus_img.JPG" alt="Image" class="w3-image content_image2"
+                    style="margin-bottom: 30px;">
+            </div>
+
+            <div class="col"></div>
+        </div>
+
+        <footer class="text-center text-lg-start">
+            <div class="container">
+                <section>
+                    <div class="row">
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
+                            <h6 class="text-uppercase mb-3"><b>Reference Websites</b></h6>
+                            <p>
+                                <a target="_blank" href="#">GeeksforGeeks</a>
+                            </p>
+                            <p>
+                                <a target="_blank" href="#">Tutorialspoint</a>
+                            </p>
+                            <p>
+                                <a target="_blank" href="#">Javatpoint</a>
+                            </p>
+                            <p>
+                                <a target="_blank" href="#">W3schools</a>
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
+                            <h6 class="text-uppercase mb-3"><b>Reference Books</b></h6>
+                            <p>Prof. Satish Jain, M. Geetha, <i>BPB Publication</i></p>
+                            <p>Virendra Arya, Swati Gupta, <i>Asian Publication</i></p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-2">
+                            <h6 class="text-uppercase mb-3"><b>Contact</b></h6>
+
+                            <p><i class="fa fa-home mr-3"></i> Gorakhpur, Uttar Pradesh, India</p>
+                            <p><i class="fa fa-envelope mr-3"></i> info@gmail.com</p>
+                            <p><i class="fa fa-phone mr-3"></i> +91 6393303060</p>
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-2">
+                            <h6 class="text-uppercase mb-3"><b>Follow us</b></h6>
+
+                            <a class="btn btn-primary btn-floating m-1" target="_blank"
+                                href="https://www.facebook.com/surykantyadav83" role="button"
+                                style="background-color: #3B5998;"><i class="fa fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-floating m-1" target="_blank"
+                                href="https://www.instagram.com/y.sk_06/" role="button"
+                                style="background-color: #dd4b39;"><i class="fa fa-instagram"></i></a>
+                            <a class="btn btn-primary btn-floating m-1" target="_blank"
+                                href="https://twitter.com/sk_yadav_" role="button" style="background-color: #55ACEE;"><i
+                                    class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="text-center p-2" style="background-color: #80ecec; font-size: large;">
+                &copy; Copyright 2022: All Rights Reserved
+            </div>
+        </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="HTML Hyperlinks">
+    <meta name="Keywords" content="">
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+
+    <title>HTML Hyperlinks</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-xl-top menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" id="site_name"><img src="img2.png" class="logo"></a>
+            <button class="navbar-toggler tgl_btn navbar-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="o_level.html">O-Level</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="a_level.html">A-Level</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ccc.html">CCC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="row">
+        <div class="col-sm-2 col-md-3 col-lg-2">
+            <p>
+                <button class="mt-5 btn side_btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <b>|&nbsp;|&nbsp;|</b>
+                </button>
+            </p>
+            <aside class="navbar w3-container">
+                <div class="collapse show" id="collapseExample">
+                    <div class="card-body">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link w3-hover-black" href="ITTNB.html">ITTNB</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link w3-hover-black" href="WDP.html">WDP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link w3-hover-black" href="python.html">Python</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link w3-hover-black" href="#">IOT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link w3-hover-black" href="old_papers.html">Old Papers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+
+        <div class="col-sm-7 col-md-8 col-lg-7 shadow-lg p-5 mb-5 rounded content">
+            <div class="container">
+                <h1><b>Hyperlinks in HTML</b></h1>
+                <ul>
+                    <li>Hyperlinks are used to jump into another page or an specific location of some webpage by
+                        clicking on it.</li>
+                    <li>&#60;a&#62; tag ("a" stands for anchor) is use to define hyperlink and hypertext in HTML. A
+                        link can be text, images, video or any other document.</li>
+                    <li>A <i><u>Hyperlink</u></i> is a link reference that points to another webpage or another
+                        location of same webpage. A <i><u>Hypertext</u></i> is that text on webpage that contains
+                        hyperlink.</li>
+                    <li>By default hyperlinks are blue color and underline. When the mouse move over hypertext, the
+                        mouse arrow turns into little handshape and by clicking on it user can move to another
+                        location.</li>
+                </ul>
+                <hr>
+
+                <h3><b>Three states of links (by default)</b></h3>
+                <ul style="list-style-type: circle;">
+                    <li><b>Unvisited Link &rarr; </b>Blue and Underline</li>
+                    <li><b>Active Link &rarr; </b>Red and Underline</li>
+                    <li><b>Visited Link &rarr; </b>Purplr and Underline</li>
+                </ul>
+                <hr>
+
+                <h2><b>Attributes of &#60;a&#62; tag</b></h2>
+
+
+
+                <ul>
+                    <li><b>href :-</b> It is the hypertext reference that defines the address or path of the file
+                        which id hyperlinked.</li>
+
+                    <li><b>target :-</b> It defines where to open the linked document. It can have following values-
+                        <ol>
+                            <li><b>_blank :-</b> It opens the linked document in a new tab or window.</li>
+                            <li><b>_self :-</b> It opens the linked document in same tab or window. It is default
+                                value.</li>
+                            <li><b>_top :-</b> It opens the linked document in the full body of windows.</li>
+                            <li><b>_parent :-</b> It opens the linked document in parent frame.</li>
+                        </ol>
+                    </li>
+                    <li><b>title :-</b> This attribute specifies a short title or extra information when the mouse
+                        over the hypertext.</li>
+                </ul>
+                <hr>
+
+                <div>
+                    <h3><b>Example</b></h3>
+                    <h4><b><u>Code</u></b></h4>
+                    <img src="html_img/hyperlink.JPG" alt="Image" class="w3-image content_image2" style="margin-bottom: 30px;">
+
+                    <h4><b><u>Output</u></b></h4>
+                    <img src="html_img/hyperlink_img.JPG" alt="image" class="w3-image content_image2"><br><br>
+                    <hr>
+                </div>
+
+                <h2><b>Linking within same page</b></h2>
+                <p>HTML bookmarks are use to jump over a specific part of web page. They are useful when webpage is very
+                    long and have lots of contents.</p>
+                <p>For linking within same page follow these steps-</p>
+
+                <ul style="list-style-type: none;">
+                    <li><b>STEP-1 : </b>Create the bookmark by using id attribute for the element.
+                        <br>&emsp;&emsp;&emsp;&emsp; For e.g. &#60;h1 id="ch1"&#62;chapter1&#60;/h1&#62;</li>
+
+                    <li><b>STEP-2 : </b>Create hyperlink to jump over the bookmark. by using hash (#) symbol with the
+                        value of &emsp;&emsp;&emsp;&emsp; href attribute (# refers to the id).
+                        <br>&emsp;&emsp;&emsp;&emsp; For e.g. &#60;a href="#ch1"&#62;Go to chapter 1&#60;/a&#62;</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col"></div>
+    </div>
+
+    <footer class="text-center text-lg-start">
+        <div class="container">
+            <section>
+                <div class="row">
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
+                        <h6 class="text-uppercase mb-3"><b>Reference Websites</b></h6>
+                        <p>
+                            <a target="_blank" href="#">GeeksforGeeks</a>
+                        </p>
+                        <p>
+                            <a target="_blank" href="#">Tutorialspoint</a>
+                        </p>
+                        <p>
+                            <a target="_blank" href="#">Javatpoint</a>
+                        </p>
+                        <p>
+                            <a target="_blank" href="#">W3schools</a>
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
+                        <h6 class="text-uppercase mb-3"><b>Reference Books</b></h6>
+                        <p>Prof. Satish Jain, M. Geetha, <i>BPB Publication</i></p>
+                        <p>Virendra Arya, Swati Gupta, <i>Asian Publication</i></p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-2">
+                        <h6 class="text-uppercase mb-3"><b>Contact</b></h6>
+
+                        <p><i class="fa fa-home mr-3"></i> Gorakhpur, Uttar Pradesh, India</p>
+                        <p><i class="fa fa-envelope mr-3"></i> info@gmail.com</p>
+                        <p><i class="fa fa-phone mr-3"></i> +91 6393303060</p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-2">
+                        <h6 class="text-uppercase mb-3"><b>Follow us</b></h6>
+
+                        <a class="btn btn-primary btn-floating m-1" target="_blank"
+                            href="https://www.facebook.com/surykantyadav83" role="button"
+                            style="background-color: #3B5998;"><i class="fa fa-facebook-f"></i></a>
+                        <a class="btn btn-primary btn-floating m-1" target="_blank"
+                            href="https://www.instagram.com/y.sk_06/" role="button"
+                            style="background-color: #dd4b39;"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-primary btn-floating m-1" target="_blank" href="https://twitter.com/sk_yadav_"
+                            role="button" style="background-color: #55ACEE;"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="text-center p-2" style="background-color: #80ecec; font-size: large;">
+            &copy; Copyright 2022: All Rights Reserved
+        </div>
+    </footer>
+
+</body>
+
+</html>
